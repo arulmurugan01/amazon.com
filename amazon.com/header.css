@@ -1,0 +1,490 @@
+@font-face {
+    font-family:"amazon";
+    src: url(fonts/AmazonEmber_Rg.ttf);
+}
+@font-face {
+    font-family:"amazon bold";
+    src: url(fonts/AmazonEmber_Bd.ttf);
+}
+
+body{
+    margin:0px;
+    background-image:url(images/XCM_Manual_1285641_1500x600_253d7f3a-1411-41d5-8c8c-4261efca0e6f._CB414580127_.jpg);
+    background-position: 1px 99px;
+    height: 5000px;
+    background-repeat: no-repeat;
+    
+}
+
+.header{
+    display:flex;
+    flex-direction:row;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:60px;
+    background-color:#131921;
+    align-items: center;
+    
+}
+
+#amazon-logo-container{
+    position:relative;
+    align-items: center; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius:2px;
+    display: flex; 
+    margin-left:13px;
+    height: 50px;
+}
+
+#border-l-1{
+    position:absolute;
+    border: 1px solid rgb(255, 255, 255);
+    top: 0px;
+    bottom: 0px;
+    left: -5px;
+    right: 0px;
+    margin-left:3px;
+    border-radius: 2px;
+    opacity:0;
+}
+
+#border-l-1:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+
+#amazon-logo{ 
+    box-sizing: border-box;
+    height:30px;
+    width:97px;
+    background-color:#131921; 
+    background-image:url(nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background-position: -10px -51px;
+    background-repeat: no-repeat;
+    margin-left:5px;
+    margin-top:5px;
+}
+
+#in{
+    margin-right:11px;
+    color:white;
+    font-family:arial;
+    font-size:13.6px;
+    margin-top:12px;
+    margin-left:1px;
+}
+.left{
+    display:flex;
+
+}
+#delivery-container{
+    position:relative;
+    display:flex;
+    align-items: center;
+    padding-right:7px;
+    margin-top:5px;
+    margin-left:4px;
+    border-radius:2px;
+    height: 50px;
+}
+
+#border-l-2{
+    position:absolute;
+    border: 1px solid rgb(255, 255, 255);
+    top: 0px;
+    bottom: 0px;
+    left: -5px;
+    right: -3px;
+    margin-left:3px;
+    border-radius: 2px;
+    opacity:0;
+}
+
+#border-l-2:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+
+
+#delivery-text{
+    margin-left:-1.7px;
+}
+#delivery-text > p{
+    white-space: nowrap;
+    display:flex;
+    line-height: 10%;
+    font-family:"amazon";
+}
+
+#delivery-text :nth-child(2){
+    font-family:"amazon bold";
+    font-size:14px;
+    color:white;
+}
+#delivery-text :nth-child(1){
+    color:rgba(255, 255, 255, 0.836);
+    font-size:12px;
+}
+#location-logo{
+    background-color:#131921;
+    width:20px;
+    height:30px;
+    margin-left:5px;
+    background-position: -70px -368px;
+    background-image:url(nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+}
+
+#center{
+    display: flex;
+    flex: 1;
+}
+
+
+#product-dropdown-menu-container{
+    margin-left: 17px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height:40px;
+    width:51px;
+    background-color:hsl(0deg 0% 94%);
+    display:relative;
+    border-radius: 4px 0px 0px 4px ;
+    border-right-width:1px;
+    border-right-color:#cdcdcd;
+    border-right-style:solid;
+    font-family: 'amazon';
+    cursor:pointer;
+}
+
+
+.arrow-down{
+    height:0px;
+    width:0px;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent;
+    border-top: 4px solid rgb(92, 92, 92);
+}
+
+#product-dropdown-menu-container #drop-down-menu  { 
+    height:360px ;
+    bottom:-352px;  
+    margin: 0px;  
+    position: absolute;
+    border:1px solid hsl(30deg 2% 52%);
+    background-color: hsl(0deg 0% 94%);
+    list-style: none;
+    scrollbar-width: normal;
+    overflow-y: scroll;
+    display: none;
+    font-family: 'amazon';
+    cursor:pointer;
+}
+#drop-down-menu div{
+ font-size: 14px; 
+ padding-left:4px; 
+ padding-right:3px;
+}
+
+#drop-down-menu div:hover {
+    background-color:hsl(210deg 100% 56%);
+    color: white;
+   }
+
+#product-dropdown-menu-container:hover #drop-down-menu{
+    display: block;
+}
+
+#seacrh-bar-container{
+    flex:1;
+}
+
+#search-bar{
+   width: 100%;
+   flex: 1;
+   height: 38px;
+   border:none;
+   padding-left:7px;
+   font-size: 15px;
+   font-family:"amazon";
+}
+
+
+#search-bar:focus{
+    border: none;
+    outline:none;
+ }
+
+#search-text{
+    margin-left:3px;
+    margin-right: -6px;
+   font-size: 12px;  
+   color: rgb(92, 92, 92);
+}
+
+#search-icon-container{
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    width: 45px;
+    background-color:#febd69;
+    background-image:url(nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background-position: 2px -280px;
+    cursor:pointer;
+}
+
+#search-icon-container:hover{
+    background-color: hsl(34deg 88% 62%);
+}
+
+#right{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-right:35px;
+}
+#flag-image-container{
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    margin-left:26px;
+    margin-top: 8px;
+
+}
+
+#border-1{
+    position:absolute;
+    border: 1px solid rgb(255, 255, 255);
+    top: -21px;
+    bottom: -13px;
+    left: -12px;
+    right: -10px;
+    opacity: 0;
+    border-radius: 2px;
+}
+
+#border-1:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+
+#flag-image{
+    margin-right:5px;
+    width: 22px;
+    height:16px;
+    background-image:url(images/fe2UeLQmJ11kKHN.png);
+    background-position: -1px 128px;
+    border-radius:1px;
+}
+
+.arrow-down-2{
+    height:0px;
+    width:0px;
+    margin-bottom:2px;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent;
+    border-top: 4px solid #a7acb2;
+}
+
+#account-container{
+    margin-left:20.5px;
+    position: relative;
+}
+
+#border-2{
+    position:absolute;
+    border: 1px solid rgb(255, 255, 255);
+    top: -9px;
+    bottom: -9px;
+    left: -12px;
+    right: -10px;
+    margin-left:3px;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+#border-2:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+
+#account-container > div {
+    line-height: 15px;
+    display: flex;
+    color: white;
+    font-family:"amazon";
+    font-size:12px;
+}
+
+#account-list{
+    display: flex;
+    align-items:center;
+}
+
+#account-list :nth-child(1){
+    font-weight:599;
+    font-size: 14px;
+    margin-right:5px;
+    margin-left:-1px;
+    font-family:"amazon bold";
+    margin-bottom:2px;
+}
+
+#account-list :nth-child(2){
+    margin-top:4px;
+}
+#account-container :nth-child(1){
+    margin-left:0px;
+}
+
+#return-container{
+    margin-left:20px;
+    margin-top:2px;
+    position:relative;
+}
+
+#border-3{
+    position:absolute;
+    border: 1px solid rgb(255, 255, 255);
+    top: -9px;
+    bottom: -7px;
+    left: -12px;
+    right: -10px;
+    margin-left:3px;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+#border-3:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+
+.arrow-down-3{
+    height:0px;
+    width:0px;
+    margin-bottom:4px;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent;
+    border-top: 4px solid #a7acb2;
+}
+
+#return-container div{
+    display: flex;
+    color: white;
+    font-family:"amazon";
+}
+
+#return-container :nth-child(1){
+    font-size:12px;    
+}
+#return-container :nth-child(2){
+    font-size:14px;
+    font-family:"amazon bold";
+    margin-bottom:3px;
+    margin-top:-1px;
+}
+#cart-container{
+    display: flex;
+    align-items:flex-end;
+    margin-left:18px;
+    margin-bottom:1px;
+    position:relative;
+}
+
+#border-4{
+    position:absolute;
+    border: 1px solid rgb(255, 255, 255);
+    top: -11px;
+    bottom: -12px;
+    left: -12px;
+    right: -10px;
+    margin-left:3px;
+    border-radius: 2px;
+    margin-left: 1px;
+    opacity:0;
+}
+
+#border-4:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+
+#cart-image{
+    width:40px;
+    height:27px;
+    background-image: url(nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background-position: -8px -339px;
+}
+#cart-image > div{
+    font-family:"amazon bold";
+    color:#f08804;
+    margin-left:20px;
+    margin-top:-5px;
+}
+#cart-container :nth-child(2){
+    margin-bottom:-2px;
+    color: white;
+    font-family: "amazon bold";
+    font-size:14px;
+}
+#header-bottom{
+    display: flex;
+    align-items: center;
+    height:39px;
+    width:auto;
+    margin-top:60px;
+    background-color: #232f3e;
+    color: rgb(255, 255, 255);
+    z-index: 200;
+}
+#header-bottom > p{
+    font-size:14px;
+    font-family:"amazon";
+    margin-right:18px; 
+    margin-bottom:17px; 
+}
+#header-bottom :nth-child(2){
+    font-family:"amazon bold";
+    font-size:14px;
+    margin-right:18px;
+    margin-left:5px;
+    margin-bottom:3px;
+    
+}
+
+#three-dot-image{
+    background-image: url(nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background-position: -172px -255px;
+    width:17px;
+    height:14px;
+    margin-bottom:1px;
+    margin-left:20px;
+}
+
+#center-row{
+    display:flex;
+    align-items: center;
+    font-family:"amazon";
+    font-size:14px;
+}
+#center-row :nth-child(1){
+    margin-bottom:16px;
+}
+#arrow-down-4{
+    margin-top:7px;
+    height:0px;
+    width:0px;
+    margin-top:3px;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent;
+    border-top: 4px solid #a7acb2;
+    z-index:1;
+}
+#ad-image{
+    margin-left:37px;
+}
+
